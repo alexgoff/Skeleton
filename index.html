@@ -1,46 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+	<head>
+		<!-- Basic Page Needs
+			–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<meta charset="utf-8">
+		<title>Skeleton: Responsive CSS Boilerplate</title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<!-- Mobile Specific Metas
+			–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- FONT
+			–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700|Raleway:400,300,600' rel='stylesheet' type='text/css'>
+		<!-- CSS
+			–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="stylesheet" href="/css/normalize.css">
+		<link rel="stylesheet" href="/css/skeleton.css">
+		<link rel="stylesheet" href="/css/custom.css">
+		<!-- Scripts
+			–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<!-- Favicon
+			–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+		<link rel="icon" type="image/png" href="/images/favicon.png">
+	</head>
+	<body>
+		<!-- .container is main centered wrapper -->
+		<div class="container">
+			<h1>SkeletonCSS 2.1 Changes & Examples</h1>
+			<section>
+				<div class="row">
+					<div class="twelve columns">
+						<h2>Introduction</h2>
+						<p>SkeletonCSS is an expansion upon the original SkeletonCSS framework designed by Dave Gamache. It includes components from the Skeleton on SASS project by Seth Coelen. I have made my own changes as well, integrating many of the changes I typically make when starting a new project with Skeleton. Many of these changes are subjective and match my personal preferences, which may differ from the preferences of others. Overall my goal is to do small fixes and changes to Skeleton to update it for 2016 and onward, along with altering some of the typographic elements I have always changed in my own projects.</p>
+						<p>Here is an overview:</p>
+						<ul>
+							<li>Ported SkeletonCSS to SCSS using the <a href="https://github.com/whatsnewsaes/Skeleton-Sass" target="_blank" title="Skeleton on SASS">Skeleton on SASS</a> project.</li>
+							<li>Updated normalize to latest version (4.1.1)</li>
+							<li>Increased container width to 1200px maximum size</li>
+							<li>Added margins to improve readability</li>
+							<li>Switched body font to Roboto</li>
+							<li>Switched body font color to #444 to improve readability</li>
+							<li>Default font size now 1.6em (16px) to improve readability and line-height to 1.46</li>
+							<li>Re-scaled headers</li>
+							<li>Changed list item styles to disc from circle</li>
+						</ul>
+					</div>
+				</div>
+				<hr />
+			</section>
+			<section>
+				<div class="row">
+					<div class="twelve columns">
+						<h2>Body & Containers</h2>
+						<h3>Width</h3>
+						<p>The maximum container width has been increased from 960px in SkeletonCSS 2.0 to 1200px. This allows pages to span wider screens before maxing out in size.</p>
+						<h3>Margins</h3>
+						<p>A 1.5rem margin has been added to the top of the body to separate headers from the top of the page.</p>
+					</div>
+				</div>
+				<hr />
+			</section>
+			<section>
+				<h2>SCSS</h2>
+                <div class="row">
+                  <div class="twelve columns">
+    				<p>Thanks to the <a href="https://github.com/whatsnewsaes/Skeleton-Sass" target="_blank" title="Skeleton on SASS">Skeleton on SASS</a> project, SkeletonCSS is now broken down into SCSS components, included in this project.</p>                    
+                  </div>
+                </div>
 
-  <!-- Basic Page Needs
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta charset="utf-8">
-  <title>Your page title here :)</title>
-  <meta name="description" content="">
-  <meta name="author" content="">
-
-  <!-- Mobile Specific Metas
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
-  <!-- CSS
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/skeleton.css">
-
-  <!-- Favicon
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
-
-</head>
-<body>
-
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container">
-    <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
-      </div>
-    </div>
-  </div>
-
-<!-- End Document
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-</body>
+				<hr />
+			</section>
+			<section class="example-grid docs-example">
+				<h2>Grids</h2>
+				<div class="row">
+					<div class="one column">One</div>
+					<div class="eleven columns">Eleven</div>
+				</div>
+				<div class="row">
+					<div class="two columns">Two</div>
+					<div class="ten columns">Ten</div>
+				</div>
+				<div class="row">
+					<div class="three columns">Three</div>
+					<div class="nine columns">Nine</div>
+				</div>
+				<div class="row">
+					<div class="four columns">Four</div>
+					<div class="eight columns">Eight</div>
+				</div>
+				<div class="row">
+					<div class="five columns">Five</div>
+					<div class="seven columns">Seven</div>
+				</div>
+				<div class="row">
+					<div class="six columns">Six</div>
+					<div class="six columns">Six</div>
+				</div>
+				<div class="row">
+					<div class="seven columns">Seven</div>
+					<div class="five columns">Five</div>
+				</div>
+				<div class="row">
+					<div class="eight columns">Eight</div>
+					<div class="four  columns">Four</div>
+				</div>
+				<div class="row">
+					<div class="nine columns">Nine</div>
+					<div class="three columns">Three</div>
+				</div>
+				<div class="row">
+					<div class="ten columns">Ten</div>
+					<div class="two columns">Two</div>
+				</div>
+				<div class="row">
+					<div class="eleven columns">Eleven</div>
+					<div class="one column">One</div>
+				</div>
+				<hr />
+			</section>
+			<section>
+				<h2>Typography</h2>
+				<div class="row">
+					<div class="six columns">
+						<h3>Color</h3>
+						<p>Small changes have been made to the color of the typography of SkeletonCSS. The <code>&#60;p&#62;</code> text is now slightly lighter in color than the headers, #444 versus #222.</p>
+						<h3>Font Family</h3>
+						<p>Roboto has been added as a body font for Skeleton.</p>
+						<h3>Font Size</h3>
+						<p>Body font sizing has been changed to 1.6rem, or 16px.</p>
+						<p>Headings have been changed as well to better match in size.</p>
+					</div>
+					<div class="six columns">
+						<h1>Heading</h1>
+						<h2>Heading</h2>
+						<h3>Heading</h3>
+						<h4>Heading</h4>
+						<h5>Heading</h5>
+						<h6>Heading</h6>
+					</div>
+					<hr />
+				</div>
+			</section>
+		</div>
+		<!-- Note: columns can be nested, but it's not recommended since Skeleton's grid has %-based gutters, meaning a nested grid results in variable with gutters (which can end up being *really* small on certain browser/device sizes) -->
+		<!-- End Document
+			–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+	</body>
 </html>
