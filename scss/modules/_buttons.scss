@@ -129,6 +129,13 @@ input {
     background-color: $link-color;
     border-color: $link-color;
   }
+  &[type="color"],
+  &[type="range"],
+  &[type="date"],
+  &[type="month"],
+  &[type="week"],
+  &[type="datetime"],
+  &[type="datetime-local"],
   &[type="email"],
   &[type="number"],
   &[type="search"],
@@ -143,5 +150,7 @@ input {
     border-radius: $global-radius;
     box-shadow: none;
     box-sizing: border-box;
+    width: 100%;
+    max-width: 25rem;
   }
 }

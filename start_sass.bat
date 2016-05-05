@@ -1,0 +1,1 @@
+sass --watch scss/skeleton.scss:css/skeleton.css

@@ -1,1 +1,5 @@
 .DS_Store
+skeleton.komodoproject
+bower.json
+.sass-cache
+sass_start.bat
